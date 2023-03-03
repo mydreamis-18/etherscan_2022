@@ -1,0 +1,192 @@
+// wsl
+// cd ~
+// cd .puppeth
+// geth --datadir node init bit.json
+// geth --datadir node --http --allow-insecure-unlock --http.addr "127.0.0.1" --http.port 9000 --http.corsdomain "*" \
+// --http.api "miner,txpool,web3,personal,eth" --syncmode full --networkid 7722 \
+// --ws --ws.addr "127.0.0.1" --ws.port 9005 --ws.origins "*" \
+// --ws.api "miner,txpool,web3,personal,eth"
+
+// wsl
+// npx solc --bin --abi Toy_noParameter.sol
+// geth attach http://127.0.0.1:9000
+// personal.newAccount()
+// eth.getBalance(eth.coinbase)
+// miner.start(10)
+// miner.stop()
+
+// bytecode = "0x" + "60806040523480156200001157600080fd5b506040518060400160405280600f81526020017f546f795f6e6f506172616d65746572000000000000000000000000000000000081525060019081620000589190620002d9565b50620003c0565b600081519050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b60006002820490506001821680620000e157607f821691505b602082108103620000f757620000f662000099565b5b50919050565b60008190508160005260206000209050919050565b60006020601f8301049050919050565b600082821b905092915050565b600060088302620001617fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff8262000122565b6200016d868362000122565b95508019841693508086168417925050509392505050565b6000819050919050565b6000819050919050565b6000620001ba620001b4620001ae8462000185565b6200018f565b62000185565b9050919050565b6000819050919050565b620001d68362000199565b620001ee620001e582620001c1565b8484546200012f565b825550505050565b600090565b62000205620001f6565b62000212818484620001cb565b505050565b5b818110156200023a576200022e600082620001fb565b60018101905062000218565b5050565b601f82111562000289576200025381620000fd565b6200025e8462000112565b810160208510156200026e578190505b620002866200027d8562000112565b83018262000217565b50505b505050565b600082821c905092915050565b6000620002ae600019846008026200028e565b1980831691505092915050565b6000620002c983836200029b565b9150826002028217905092915050565b620002e4826200005f565b67ffffffffffffffff8111156200030057620002ff6200006a565b5b6200030c8254620000c8565b620003198282856200023e565b600060209050601f8311600181146200035157600084156200033c578287015190505b620003488582620002bb565b865550620003b8565b601f1984166200036186620000fd565b60005b828110156200038b5784890151825560018201915060208501945060208101905062000364565b86831015620003ab5784890151620003a7601f8916826200029b565b8355505b6001600288020188555050505b505050505050565b61076280620003d06000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c8063368b8772146100515780633fb5c1cb1461006d578063ce6d41de14610089578063f2c9ecd8146100a7575b600080fd5b61006b600480360381019061006691906102d7565b6100c5565b005b61008760048036038101906100829190610356565b6100d8565b005b6100916100e2565b60405161009e9190610402565b60405180910390f35b6100af610174565b6040516100bc9190610433565b60405180910390f35b80600190816100d4919061065a565b5050565b8060008190555050565b6060600180546100f19061047d565b80601f016020809104026020016040519081016040528092919081815260200182805461011d9061047d565b801561016a5780601f1061013f5761010080835404028352916020019161016a565b820191906000526020600020905b81548152906001019060200180831161014d57829003601f168201915b5050505050905090565b60008054905090565b6000604051905090565b600080fd5b600080fd5b600080fd5b600080fd5b6000601f19601f8301169050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b6101e48261019b565b810181811067ffffffffffffffff82111715610203576102026101ac565b5b80604052505050565b600061021661017d565b905061022282826101db565b919050565b600067ffffffffffffffff821115610242576102416101ac565b5b61024b8261019b565b9050602081019050919050565b82818337600083830152505050565b600061027a61027584610227565b61020c565b90508281526020810184848401111561029657610295610196565b5b6102a1848285610258565b509392505050565b600082601f8301126102be576102bd610191565b5b81356102ce848260208601610267565b91505092915050565b6000602082840312156102ed576102ec610187565b5b600082013567ffffffffffffffff81111561030b5761030a61018c565b5b610317848285016102a9565b91505092915050565b6000819050919050565b61033381610320565b811461033e57600080fd5b50565b6000813590506103508161032a565b92915050565b60006020828403121561036c5761036b610187565b5b600061037a84828501610341565b91505092915050565b600081519050919050565b600082825260208201905092915050565b60005b838110156103bd5780820151818401526020810190506103a2565b60008484015250505050565b60006103d482610383565b6103de818561038e565b93506103ee81856020860161039f565b6103f78161019b565b840191505092915050565b6000602082019050818103600083015261041c81846103c9565b905092915050565b61042d81610320565b82525050565b60006020820190506104486000830184610424565b92915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b6000600282049050600182168061049557607f821691505b6020821081036104a8576104a761044e565b5b50919050565b60008190508160005260206000209050919050565b60006020601f8301049050919050565b600082821b905092915050565b6000600883026105107fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff826104d3565b61051a86836104d3565b95508019841693508086168417925050509392505050565b6000819050919050565b600061055761055261054d84610320565b610532565b610320565b9050919050565b6000819050919050565b6105718361053c565b61058561057d8261055e565b8484546104e0565b825550505050565b600090565b61059a61058d565b6105a5818484610568565b505050565b5b818110156105c9576105be600082610592565b6001810190506105ab565b5050565b601f82111561060e576105df816104ae565b6105e8846104c3565b810160208510156105f7578190505b61060b610603856104c3565b8301826105aa565b50505b505050565b600082821c905092915050565b600061063160001984600802610613565b1980831691505092915050565b600061064a8383610620565b9150826002028217905092915050565b61066382610383565b67ffffffffffffffff81111561067c5761067b6101ac565b5b610686825461047d565b6106918282856105cd565b600060209050601f8311600181146106c457600084156106b2578287015190505b6106bc858261063e565b865550610724565b601f1984166106d2866104ae565b60005b828110156106fa578489015182556001820191506020850194506020810190506106d5565b868310156107175784890151610713601f891682610620565b8355505b6001600288020188555050505b50505050505056fea264697066735822122002495378b2dc447f7fc7a6f6acf32e3e837a393797df47ecc757ebc8f8ff364e64736f6c63430008110033"
+// txObject = { from : eth.coinbase, data : bytecode}
+// personal.unlockAccount(eth.coinbase)
+// eth.sendTransaction(txObject)
+// TransactionHash = "0xff7c71f75317735d8e5c1dac847de0e127f0644c0a88050c83f4dfccd0a4f2a8"
+// miner.start(1)
+// miner.stop()
+
+// eth.getTransactionReceipt(TransactionHash)
+// ca = "0x006f20e982c9cc57f1d1547d4ae3c6c3fa6836d2"
+// abi = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"inputs":[],"name":"getMessage","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getNumber","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"string","name":"_newMessage","type":"string"}],"name":"setMessage","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"_newNumber","type":"uint256"}],"name":"setNumber","outputs":[],"stateMutability":"nonpayable","type":"function"}]
+// contract = eth.contract(abi)
+// instance = contract.at(ca)
+// instance.getNumber.call()
+// personal.unlockAccount(eth.coinbase)
+// instance.setNumber(3, { from: eth.coinbase })
+// miner.start(1)
+// miner.stop()
+// instance.getNumber.call()
+
+// express web3 solc sequelize mysql2 dotenv
+const express = require("express");
+const app = express();
+const PORT = 4000;
+
+app.listen(PORT, () => console.log("PORT:", PORT));
+
+// axios 데이터 통신 시 필요
+app.use(express.json());
+
+//
+const Web3 = require("web3");
+const web3 = new Web3(new Web3.providers.WebsocketProvider("ws://127.0.0.1:9005"));
+
+//
+const cors = require("cors");
+const address = "http://localhost:3000";
+
+app.use(cors({ origin: address }));
+
+//
+const { sequelize, Block } = require("../model");
+
+let isSequelizeDone = false;
+// original: Error: Table 'toy_ether_scan.blocks' doesn't exist
+sequelize.sync({ force: true }).then(() => (isSequelizeDone = true));
+
+// 반복문 안에서 동기 처리를 위해 재귀 함수 사용
+// async function a(i)
+// {
+//   if(i < 10)
+//   {
+//     create().then(() => {
+
+//       a(i + 1);
+//     })
+//   }
+// }
+
+// getExistingBlockData(), saveExistingBlockData()
+app.get("/", async (req, res) => {
+  //
+  const getExistingBlockData = async () => {
+    //
+    let index = 0;
+    const blocks = new Array();
+    const blockNumber = await web3.eth.getBlockNumber();
+
+    while (index <= blockNumber) {
+      //
+      const block = await web3.eth.getBlock(index);
+
+      // 배열 => 문자열
+      block.transactions = JSON.stringify(block.transactions);
+      block.uncles = JSON.stringify(block.uncles);
+
+      const saveExistingBlockData = async () => {
+        //
+        const db_block = (await Block.create(block)).dataValues;
+
+        // 호기심 : block 객체와 db_data 객체 비교해보기
+        // if (index === 0) {
+        //   //
+        //   const sameKey = new Array();
+        //   const differentKey = new Array();
+        //   const undefinedKey = new Array();
+        //   //
+        //   for (const key in db_block) {
+        //     //
+        //     if (block[key] === undefined) {
+        //       undefinedKey.push(key);
+        //       continue;
+        //     }
+
+        //     if (db_block[key] === block[key]) {
+        //       sameKey.push(key);
+        //       continue;
+        //     }
+        //     differentKey.push(key);
+        //   }
+
+        //   console.log(sameKey);
+        //   console.log(differentKey);
+
+        //   // [ 'id', 'updatedAt', 'createdAt' ]
+        //   console.log(undefinedKey);
+        // }
+
+        // 프론트에서 필요 없는 값 제거
+        delete db_block.id;
+        delete db_block.updatedAt;
+        delete db_block.createdAt;
+
+        // 문자열 => 배열
+        db_block.transactions = JSON.parse(db_block.transactions);
+        db_block.uncles = JSON.parse(db_block.uncles);
+
+        return db_block;
+      };
+
+      const db_block = await saveExistingBlockData();
+      blocks.push(db_block);
+      index++;
+    }
+    return blocks;
+  };
+
+  // 시퀄라이즈 테이블 생성 후에 DB 작업
+  while (true) {
+    //
+    if (isSequelizeDone) {
+      //
+      const existingBlock = await getExistingBlockData();
+      res.send(existingBlock);
+      break;
+    }
+  }
+});
+
+app.post("/getNewBlock", async (req, res) => {
+  //
+  const { index } = req.body;
+  //
+  const getNewBlockData = async (index) => {
+    //
+    const newBlock = await web3.eth.getBlock(index);
+
+    newBlock.transactions = JSON.stringify(newBlock.transactions);
+    newBlock.uncles = JSON.stringify(newBlock.uncles);
+
+    const saveNewBlockData = async () => {
+      //
+      const db_block = (await Block.create(newBlock)).dataValues;
+
+      delete db_block.id;
+      delete db_block.updatedAt;
+      delete db_block.createdAt;
+
+      db_block.transactions = JSON.parse(db_block.transactions);
+      db_block.uncles = JSON.parse(db_block.uncles);
+
+      return db_block;
+    };
+
+    const db_block = await saveNewBlockData();
+    return db_block;
+  };
+
+  const newBlock = await getNewBlockData(index);
+  res.send(newBlock);
+});
+
+//
+// node app.js
+// npm start
