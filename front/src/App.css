@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "LeeSeoyun";
+    src: url("./font/LeeSeoyun.ttf");
+}
+
+* {
+    font-family: "LeeSeoyun";
+}
+
+/* App.js */
+
+.App {
+    margin: 3vw;
+}
+
+#block_number {
+    text-align: center;
+    font-weight: 600;
+    font-size: 3vw;
+    margin: 0.5vw;
+    width: 100vw;
+}
+
+/* Block.js */
+
+.block-container {
+    background-color: rgba(135, 207, 235, 0.5);
+    word-break: break-all;
+    margin: 1vw auto;
+    font-size: 1vw;
+    padding: 1vw;
+    width: 80vw;
+}
+
+.block-index, .transaction-index {
+    font-weight: 900;
+    margin: 0.5vw 0;
+    color: royalblue;
+    font-size: 1vw;
+}
+
+.block-data-key, .transaction-data-key {
+    font-weight: 900;
+}
+
+.show-transactions-button {
+    margin: 0.5vw 0;
+}
